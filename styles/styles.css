@@ -1,0 +1,189 @@
+:root {
+  --color-primary: #093f68;
+  --color-secondary: #777f98;
+  --color-accent: #3ee9e5;
+  --color-back-ground: #080c20;
+  --color-headings: #fff;
+  --color-errors: #ff2965;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: #080c20;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #777f98;
+}
+
+/* Icons */
+.list__check-icon {
+  width: 12px;
+  height: 9px;
+  margin-right: 1.5rem;
+}
+
+.list__check-icon--free {
+  fill: var(--color-accent);
+}
+
+.card__icon {
+  position: absolute;
+}
+
+.card__icon--free {
+  width: 46px;
+  height: 46px;
+  top: -23px;
+}
+
+.card__icon--paid {
+  width: 51px;
+  height: 65px;
+  top: -34px;
+}
+
+/* Features Icon */
+.feature__icon-wrapper {
+  align-items: center;
+  background: var(--color-primary);
+  border-radius: 45px;
+  display: inline-flex;
+  height: 15rem;
+  justify-content: center;
+  width: 15rem;
+}
+
+.feature__header {
+  color: var(--color-headings);
+  margin: 0%;
+}
+
+.feature__article {
+  margin-top: 3.2rem;
+}
+
+.feature__contariner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__contariner {
+    text-align: start;
+    flex-direction: row;
+  }
+
+  .feature__article {
+    margin-top: 0;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature__contariner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature__article {
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+}
+
+/* Plan */
+.card {
+  position: relative;
+  padding: 3rem;
+
+  border-radius: 8px;
+}
+
+.card__header {
+  margin-bottom: 5rem;
+}
+
+.card__header-title {
+  text-align: left;
+}
+
+.card__header-text {
+  color: inherit;
+  opacity: 0.5;
+}
+
+.card--free {
+  background: var(--color-primary);
+  color: var(--color-headings);
+}
+
+.card--paied {
+  background: var(--color-accent);
+  color: var(--color-back-ground);
+}
+
+.card__header-title--paid,
+.card__header-text--paid {
+  color: var(--color-back-ground);
+}
+
+.card__price {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  margin-right: 0.5rem;
+}
+
+.card__price-container {
+  display: flex;
+  align-items: center;
+}
+
+.card__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card__list-item {
+  color: var(--color-headings);
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 3rem;
+}
+
+.card__list-item--paid {
+  color: var(--color-back-ground);
+}
