@@ -46,6 +46,18 @@ p {
   color: #777f98;
 }
 
+/* Header */
+.header__logo {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin: 0%;
+  }
+}
+
 /* Icons */
 .list__check-icon {
   width: 12px;
@@ -262,4 +274,23 @@ input:focus {
     padding: 1rem 1.5rem;
     margin-top: 0;
   }
+}
+
+/* Hero contents */
+.hero__content {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.hero__content > p {
+  margin: 2.3rem 0 3.2rem 0;
+}
+
+h1 > em {
+  font-style: initial;
+  color: var(--color-accent);
+}
+
+article > p {
+  font-weight: 200;
 }
