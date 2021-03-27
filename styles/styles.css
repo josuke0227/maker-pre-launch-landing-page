@@ -187,3 +187,79 @@ p {
 .card__list-item--paid {
   color: var(--color-back-ground);
 }
+
+/* Form */
+input,
+button {
+  border-radius: 24px;
+  border: none;
+  display: block;
+  width: 100%;
+}
+
+button > span,
+::placeholder {
+  font-weight: 800;
+}
+
+button {
+  margin-top: 2.4rem;
+  border: 2px solid var(--color-accent);
+  background: var(--color-accent);
+  padding: 1rem;
+}
+
+button:hover {
+  background: var(--color-back-ground);
+}
+
+button:hover span {
+  color: var(--color-headings);
+  opacity: 1;
+}
+
+button > span {
+  color: var(--color-back-ground);
+  opacity: 0.7;
+}
+
+input {
+  border: 2px solid var(--color-primary);
+  background: var(--color-primary);
+  box-sizing: border-box;
+  color: var(--color-headings);
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+::placeholder {
+  color: var(--color-headings);
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--color-accent);
+}
+
+@media screen and (min-width: 768px) {
+  input,
+  button {
+    display: initial;
+    width: auto;
+  }
+
+  form {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  input {
+    flex-grow: 1;
+  }
+
+  button {
+    padding: 1rem 1.5rem;
+    margin-top: 0;
+  }
+}
