@@ -7,35 +7,23 @@
     <title>Design System</title>
     <link rel="icon" href="../images/favicon-32x32.png" />
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body style="margin: 0">
-    <header>
+  <body>
+    <header data-aos="zoom-in">
       <svg class="header__logo" width="120" height="36">
         <use xlink:href="images/logo.svg#logo"></use>
       </svg>
     </header>
-    <section class="hero">
-      <picture class="hero__image-mobile">
-        <source
-          type="image/webp"
-          srcset="
-            images/illustration-hero-mobile.webp    1x,
-            images/illustration-hero-mobile@2x.webp 2x
-          "
-        />
-        <source
-          type="image/png"
-          srcset="
-            images/illustration-hero-mobile.png    1x,
-            images/illustration-hero-mobile@2x.png 2x
-          "
-        />
+    <section class="hero" data-aos="zoom-in">
+      <div class="hero__image-mobile">
         <img src="/images/illustration-hero-mobile.png" alt="" />
-      </picture>
+      </div>
       <svg width="408" height="460" class="hero__image-left">
         <use xlink:href="images/illustration-hero-left.svg#hero-left"></use>
       </svg>
@@ -47,7 +35,7 @@
           side hustle, we’ve got you covered.
         </p>
         <div>
-          <svg width="26" height="42">
+          <svg width="26" height="42" class="hero__icon-mouse">
             <use xlink:href="images/icon-scroll.svg#scroll"></use>
           </svg>
         </div>
@@ -57,7 +45,7 @@
       </svg>
     </section>
     <section class="block block__features">
-      <div class="feature__contariner">
+      <div class="feature__contariner" data-aos="fade-up">
         <div class="feature__icon-wrapper">
           <svg width="74px" height="105px">
             <use xlink:href="images/illustration-passions.svg#passions"></use>
@@ -71,7 +59,7 @@
           </p>
         </article>
       </div>
-      <div class="feature__contariner">
+      <div class="feature__contariner" data-aos="fade-up">
         <div class="feature__icon-wrapper">
           <svg width="74px" height="87px">
             <use
@@ -87,7 +75,7 @@
           </p>
         </article>
       </div>
-      <div class="feature__contariner">
+      <div class="feature__contariner" data-aos="fade-up">
         <div class="feature__icon-wrapper">
           <svg width="79px" height="93px">
             <use
@@ -103,7 +91,7 @@
           </p>
         </article>
       </div>
-      <div class="feature__contariner">
+      <div class="feature__contariner" data-aos="fade-up">
         <div class="feature__icon-wrapper">
           <svg width="104px" height="87px">
             <use
@@ -129,7 +117,7 @@
         </p>
       </header>
       <div class="block__prices-container">
-        <div class="card card--free">
+        <div class="card card--free" data-aos="zoom-in-down">
           <svg class="card__icon card__icon--free">
             <use xlink:href="images/icon-free.svg#icon-free"></use>
           </svg>
@@ -168,8 +156,7 @@
             </li>
           </ul>
         </div>
-
-        <div class="card card--paied">
+        <div class="card card--paied" data-aos="zoom-in-down">
           <svg class="card__icon card__icon--paid">
             <use xlink:href="images/icon-paid.svg#icon-paid"></use>
           </svg>
@@ -224,5 +211,9 @@
         <button type="submit"><span>Get notified</span></button>
       </form>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

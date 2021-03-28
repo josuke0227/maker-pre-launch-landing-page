@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Manrope", sans-serif;
   background: #080c20;
+  margin: 0;
 }
 
 h1,
@@ -94,6 +95,24 @@ p {
 
 .list__check-icon--free {
   fill: var(--color-accent);
+}
+
+.hero__icon-mouse {
+  animation: hover 1.5s infinite ease-in-out;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .card__icon {
