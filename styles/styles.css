@@ -47,25 +47,25 @@ p {
 }
 
 /* Container */
-.container {
-  padding: 4rem;
-}
-
 .block {
-  padding: 15rem 2.4rem 16.4rem;
+  margin: 14rem 2.4rem 0;
 }
 
 @media screen and (min-width: 768px) {
   .block {
-    padding: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 }
 
 @media screen and (min-width: 1040px) {
-  .container {
-    display: flex;
+  .block {
+    margin-left: 16rem;
+    margin-right: 16rem;
   }
 }
+
+/* section container  */
 
 /* Header */
 .header__logo {
@@ -114,6 +114,10 @@ p {
 
 /* Features */
 
+.block__features {
+  margin-top: 14rem;
+}
+
 .features__header-title {
   margin-bottom: 0;
 }
@@ -156,6 +160,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .block__features {
+    margin-top: 10rem;
+  }
+
   .feature__contariner:nth-of-type(odd) {
     margin-left: 6rem;
   }
@@ -206,7 +214,7 @@ p {
 
 /* Plan */
 .block__prices-container {
-  margin-top: 9rem;
+  margin-top: 5rem;
   display: grid;
   grid-gap: 6rem;
 }
@@ -274,7 +282,17 @@ p {
   color: var(--color-back-ground);
 }
 
+@media screen and (min-width: 1040px) {
+  .card--paied {
+    transform: scale(1.05);
+  }
+}
+
 /* Form */
+.block__form {
+  margin: 14rem 0 16rem;
+}
+
 .block__form-title-container {
   background: url("/images/bg-footer-squiggle.svg") no-repeat center;
   background-size: cover;
@@ -397,6 +415,7 @@ input:focus {
   .block__prices-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    grid-gap: 4rem;
     padding: 10rem;
   }
 }
@@ -492,7 +511,7 @@ article > p {
 
 @media screen and (min-width: 1340px) {
   .hero {
-    grid-gap: 5rem;
+    grid-gap: 6rem;
     grid-template-columns: 353px 1fr 335px;
   }
 }
