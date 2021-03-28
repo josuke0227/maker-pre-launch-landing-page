@@ -46,15 +46,42 @@ p {
   color: #777f98;
 }
 
+/* Container */
+.container {
+  padding: 4rem;
+}
+
+.block {
+  padding: 15rem 2.4rem 16.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    padding: 10rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .container {
+    display: flex;
+  }
+}
+
 /* Header */
 .header__logo {
   display: block;
-  margin: auto;
+  margin: 4rem auto 0;
 }
 
 @media screen and (min-width: 768px) {
   .header__logo {
-    margin: 0%;
+    margin: 4.8rem 0 0 4rem;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .header__logo {
+    margin: 8.1rem 0 0 16.5rem;
   }
 }
 
@@ -86,14 +113,19 @@ p {
 }
 
 /* Features Icon */
+
+.feature__contariner:first-child {
+  margin-top: 0;
+}
+
 .feature__icon-wrapper {
   align-items: center;
   background: var(--color-primary);
   border-radius: 45px;
   display: inline-flex;
-  height: 15rem;
+  min-height: 15rem;
   justify-content: center;
-  width: 15rem;
+  min-width: 15rem;
 }
 
 .feature__header {
@@ -106,6 +138,7 @@ p {
 }
 
 .feature__contariner {
+  margin-top: 5.6rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -113,6 +146,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .feature__contariner:nth-of-type(odd) {
+    margin-left: 6rem;
+  }
+
   .feature__contariner {
     text-align: start;
     flex-direction: row;
@@ -125,6 +162,23 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+  .block__features {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .feature__contariner:first-child {
+    margin-top: 5.6rem;
+  }
+
+  .feature__contariner:nth-of-type(odd) {
+    margin-left: 0;
+  }
+
+  .feature__contariner:nth-of-type(even) {
+    margin-top: 12rem;
+  }
+
   .feature__contariner {
     flex-direction: column;
     align-items: flex-start;
@@ -133,6 +187,10 @@ p {
   .feature__article {
     margin-top: 4rem;
     margin-left: 0;
+  }
+
+  .feature__header {
+    text-align: left;
   }
 }
 
@@ -280,6 +338,7 @@ input:focus {
 .hero__content {
   text-align: center;
   margin-top: 4.8rem;
+  padding: 0 4rem;
 }
 
 .hero__content > p {
@@ -304,7 +363,15 @@ article > p {
   width: 100%;
 }
 
+.hero {
+  margin-top: 6.6rem;
+}
+
 @media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 7.7rem;
+  }
+
   .hero__image-mobile {
     display: none;
   }
@@ -352,6 +419,7 @@ article > p {
 
   .hero {
     grid-gap: 15rem;
+    margin-top: 11.4rem;
   }
 }
 
