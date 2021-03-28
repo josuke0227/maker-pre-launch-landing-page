@@ -300,9 +300,12 @@ p {
 }
 
 @media screen and (min-width: 1040px) {
-  .card--paied {
-    transform: scale(1.05) !important;
+  #card-paid {
+    transform: scale(1.05);
   }
+  /* .card--paied {
+    transform: scale(1.05) !important;
+  } */
 }
 
 /* Form */
@@ -346,6 +349,10 @@ p {
   font-size: 1.5rem;
 }
 
+.form__button:focus {
+  outline: none;
+}
+
 .form__button:hover {
   background: var(--color-back-ground);
 }
@@ -367,6 +374,10 @@ p {
   color: var(--color-headings);
   padding: 1rem 1rem 1rem 1.5rem;
   font-size: 1.5rem;
+}
+
+.form__input--error {
+  border: 2px solid var(--color-errors);
 }
 
 ::placeholder {
@@ -411,6 +422,17 @@ p {
     gap: 1.5rem;
     min-width: 40rem;
     margin: 3rem auto 0;
+  }
+
+  .footer__form__error-message {
+    text-align: center;
+    margin: 0;
+    padding-right: 6rem;
+    color: var(--color-errors);
+  }
+
+  .message-collapse {
+    visibility: collapse;
   }
 
   .form__input {

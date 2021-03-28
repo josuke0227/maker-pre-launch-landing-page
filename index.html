@@ -119,8 +119,8 @@
           affordable, and it’s completely free to get started.
         </p>
       </header>
-      <section class="block__prices-container">
-        <div class="card card--free" data-aos="zoom-in-down">
+      <section class="block__prices-container" data-aos="zoom-in">
+        <div class="card card--free">
           <svg class="card__icon card__icon--free">
             <use xlink:href="images/icon-free.svg#icon-free"></use>
           </svg>
@@ -159,7 +159,7 @@
             </li>
           </ul>
         </div>
-        <div class="card card--paied" data-aos="fade-up" data-aos-delay="250">
+        <div class="card card--paied" id="card-paid">
           <svg class="card__icon card__icon--paid">
             <use xlink:href="images/icon-paid.svg#icon-paid"></use>
           </svg>
@@ -216,11 +216,18 @@
           placeholder="Email address"
           id="email-input"
         />
-        <button class="form__button" type="submit">
+        <button class="form__button" type="submit" id="submit-button">
           <span>Get notified</span>
         </button>
       </form>
+      <p
+        class="footer__form__error-message message-collapse"
+        id="error-message"
+      >
+        Oops! That doesn’t look like an email address
+      </p>
     </footer>
+    <script src="/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
