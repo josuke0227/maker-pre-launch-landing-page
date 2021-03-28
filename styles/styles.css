@@ -66,8 +66,6 @@ p {
   }
 }
 
-/* section container  */
-
 /* Header */
 .header__logo {
   display: block;
@@ -303,7 +301,7 @@ p {
 
 @media screen and (min-width: 1040px) {
   .card--paied {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
   }
 }
 
@@ -323,51 +321,52 @@ p {
   width: 15ch;
 }
 
-form {
+.footer__form {
   margin: 0 4rem;
 }
 
-input,
-button {
+.form__input,
+.form__button {
   border-radius: 24px;
   border: none;
   display: block;
   width: 100%;
 }
 
-button > span,
+.form__button > span,
 ::placeholder {
   font-weight: 800;
 }
 
-button {
+.form__button {
   margin-top: 2.4rem;
   border: 2px solid var(--color-accent);
   background: var(--color-accent);
   padding: 1rem;
+  font-size: 1.5rem;
 }
 
-button:hover {
+.form__button:hover {
   background: var(--color-back-ground);
 }
 
-button:hover span {
+.form__button:hover span {
   color: var(--color-headings);
   opacity: 1;
 }
 
-button > span {
+.form__button > span {
   color: var(--color-back-ground);
   opacity: 0.7;
 }
 
-input {
+.form__input {
   border: 2px solid var(--color-primary);
   background: var(--color-primary);
   box-sizing: border-box;
   color: var(--color-headings);
   padding: 1rem 1rem 1rem 1.5rem;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 ::placeholder {
@@ -376,7 +375,7 @@ input {
   opacity: 0.4;
 }
 
-input:focus {
+.form__input:focus {
   outline: none;
   border: 2px solid var(--color-accent);
 }
@@ -407,18 +406,18 @@ input:focus {
     padding: 6rem;
   }
 
-  form {
+  .footer__form {
     display: flex;
     gap: 1.5rem;
     min-width: 40rem;
     margin: 3rem auto 0;
   }
 
-  input {
-    flex-grow: auto;
+  .form__input {
+    flex-grow: 1;
   }
 
-  button {
+  .form__button {
     padding: 1rem 1.5rem;
     margin-top: 0;
     display: initial;

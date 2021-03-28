@@ -11,11 +11,11 @@
     <link rel="icon" href="../images/favicon-32x32.png" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header data-aos="zoom-in">
@@ -119,7 +119,7 @@
           affordable, and it’s completely free to get started.
         </p>
       </header>
-      <div class="block__prices-container">
+      <section class="block__prices-container">
         <div class="card card--free" data-aos="zoom-in-down">
           <svg class="card__icon card__icon--free">
             <use xlink:href="images/icon-free.svg#icon-free"></use>
@@ -159,7 +159,7 @@
             </li>
           </ul>
         </div>
-        <div class="card card--paied" data-aos="zoom-in-down">
+        <div class="card card--paied" data-aos="fade-up" data-aos-delay="250">
           <svg class="card__icon card__icon--paid">
             <use xlink:href="images/icon-paid.svg#icon-paid"></use>
           </svg>
@@ -203,15 +203,22 @@
             </li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <footer class="block__form">
       <div class="block__form-title-container">
         <h2 class="block__form-title">Get notified when we launch</h2>
       </div>
-      <form>
-        <input type="text" placeholder="Email address" />
-        <button type="submit"><span>Get notified</span></button>
+      <form class="footer__form">
+        <input
+          class="form__input"
+          type="text"
+          placeholder="Email address"
+          id="email-input"
+        />
+        <button class="form__button" type="submit">
+          <span>Get notified</span>
+        </button>
       </form>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
