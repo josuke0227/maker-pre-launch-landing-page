@@ -53,3 +53,25 @@
     gap: 3rem;
   }
 }
+
+// Block Footer
+.block__footer {
+  margin: 14rem 0 16rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("/images/bg-footer-squiggle.svg") no-repeat center;
+    background-size: cover;
+    min-height: 15vh;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .block__footer {
+    min-height: 25vh;
+  }
+}

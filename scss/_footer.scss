@@ -1,8 +1,4 @@
 /* Form */
-.block__form {
-  margin: 14rem 0 16rem;
-}
-
 .block__form-title-container {
   background: url("/images/bg-footer-squiggle.svg") no-repeat center;
   background-size: cover;
@@ -100,15 +96,6 @@
     background: none;
   }
 
-  .block__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url("/images/bg-footer-squiggle.svg") no-repeat center;
-    background-size: cover;
-    min-height: 15vh;
-  }
-
   .block__form-title {
     background: none;
   }
@@ -141,10 +128,6 @@
 }
 
 @media screen and (min-width: 1040px) {
-  .block__form {
-    min-height: 25vh;
-  }
-
   .block__prices-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
