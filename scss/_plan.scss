@@ -26,18 +26,18 @@
 }
 
 .card--free {
-  background: var(--color-primary);
-  color: var(--color-headings);
+  background: $color-primary;
+  color: $color-headings;
 }
 
 .card--paied {
-  background: var(--color-accent);
-  color: var(--color-back-ground);
+  background: $color-accent;
+  color: $color-back-ground;
 }
 
 .card__header-title--paid,
 .card__header-text--paid {
-  color: var(--color-back-ground);
+  color: $color-back-ground;
 }
 
 .card__price {
@@ -58,17 +58,17 @@
 }
 
 .card__list-item {
-  color: var(--color-headings);
+  color: $color-headings;
   font-size: 1.5rem;
   font-weight: 200;
   line-height: 3rem;
 }
 
 .card__list-item--paid {
-  color: var(--color-back-ground);
+  color: $color-back-ground;
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: $display-desktop) {
   #card-paid {
     transform: scale(1.05);
   }

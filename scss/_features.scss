@@ -10,7 +10,7 @@
 
 .feature__icon-wrapper {
   align-items: center;
-  background: var(--color-primary);
+  background: $color-primary;
   border-radius: 45px;
   display: inline-flex;
   min-height: 15rem;
@@ -19,7 +19,7 @@
 }
 
 .feature__header {
-  color: var(--color-headings);
+  color: $color-headings;
   margin: 0%;
 }
 
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $display-tablet) {
   .feature__contariner {
     text-align: start;
     flex-direction: row;
@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $display-desktop) {
   .feature__contariner {
     flex-direction: column;
     align-items: flex-start;

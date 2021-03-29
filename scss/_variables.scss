@@ -1,8 +1,9 @@
-:root {
-  --color-primary: #093f68;
-  --color-secondary: #777f98;
-  --color-accent: #3ee9e5;
-  --color-back-ground: #080c20;
-  --color-headings: #fff;
-  --color-errors: #ff2965;
-}
+$color-primary: #093f68;
+$color-secondary: #777f98;
+$color-accent: #3ee9e5;
+$color-back-ground: #080c20;
+$color-headings: #fff;
+$color-errors: #ff2965;
+$display-tablet: 768px;
+$display-desktop: 1024px;
+$display-desktop-large: 1450px;

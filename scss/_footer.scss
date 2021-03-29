@@ -24,8 +24,8 @@
 
 .form__button {
   margin-top: 2.4rem;
-  border: 2px solid var(--color-accent);
-  background: var(--color-accent);
+  border: 2px solid $color-accent;
+  background: $color-accent;
   padding: 1rem;
   font-size: 1.5rem;
 
@@ -39,40 +39,40 @@
   }
 
   &:hover {
-    background: var(--color-back-ground);
+    background: $color-back-ground;
   }
 
   &:hover span {
-    color: var(--color-headings);
+    color: $color-headings;
     opacity: 1;
   }
 
   & > span {
-    color: var(--color-back-ground);
+    color: $color-back-ground;
     opacity: 0.7;
   }
 }
 
 .form__input {
-  border: 2px solid var(--color-primary);
-  background: var(--color-primary);
+  border: 2px solid $color-primary;
+  background: $color-primary;
   box-sizing: border-box;
-  color: var(--color-headings);
+  color: $color-headings;
   padding: 1rem 1rem 1rem 1.5rem;
   font-size: 1.5rem;
 
   &:focus {
     outline: none;
-    border: 2px solid var(--color-accent);
+    border: 2px solid $color-accent;
   }
 }
 
 .form__input--error {
-  border: 2px solid var(--color-errors);
+  border: 2px solid $color-errors;
 }
 
 ::placeholder {
-  color: var(--color-headings);
+  color: $color-headings;
   font-size: 15px;
   opacity: 0.4;
 }
@@ -80,14 +80,14 @@
 .footer__form__error-message {
   text-align: center;
   margin: 0.5rem;
-  color: var(--color-errors);
+  color: $color-errors;
 }
 
 .message-collapse {
   visibility: collapse;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $display-tablet) {
   .block__form-title {
     width: auto;
   }
@@ -127,7 +127,7 @@
   }
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: $display-desktop) {
   .block__prices-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;

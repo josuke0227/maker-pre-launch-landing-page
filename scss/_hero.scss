@@ -17,7 +17,7 @@
 
 .hero__content-header > em {
   font-style: initial;
-  color: var(--color-accent);
+  color: $color-accent;
 }
 
 .hero__image-left,
@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $display-tablet) {
   .hero__image-mobile {
     display: none;
   }
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $display-desktop) {
   .hero__content-header {
     font-size: 48px;
     line-height: 56px;
