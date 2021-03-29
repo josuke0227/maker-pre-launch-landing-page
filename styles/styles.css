@@ -1,3 +1,4 @@
+@import url(/scss/normalize.css);
 h1,
 h2,
 h3 {
@@ -396,12 +397,12 @@ p {
 html {
   font-size: 62.5%; }
 
-.container {
+body {
   font-family: "Manrope", sans-serif;
   background: #080c20;
   max-width: 1440px;
   margin: 0; }
 
 @media screen and (min-width: 1450px) {
-  .container {
+  body {
     margin: 0 auto; } }
