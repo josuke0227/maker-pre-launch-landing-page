@@ -9,7 +9,13 @@
   }
 }
 
-h1 > em {
+.hero__content-header {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.hero__content-header > em {
   font-style: initial;
   color: var(--color-accent);
 }
@@ -57,7 +63,7 @@ h1 > em {
 }
 
 @media screen and (min-width: 1024px) {
-  .hero__content > h1 {
+  .hero__content-header {
     font-size: 48px;
     line-height: 56px;
   }
