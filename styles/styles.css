@@ -391,6 +391,16 @@ p {
   border: 2px solid var(--color-accent);
 }
 
+.footer__form__error-message {
+  text-align: center;
+  margin: 0.5rem;
+  color: var(--color-errors);
+}
+
+.message-collapse {
+  visibility: collapse;
+}
+
 @media screen and (min-width: 768px) {
   .block__form-title {
     width: auto;
@@ -425,14 +435,7 @@ p {
   }
 
   .footer__form__error-message {
-    text-align: center;
-    margin: 0;
     padding-right: 6rem;
-    color: var(--color-errors);
-  }
-
-  .message-collapse {
-    visibility: collapse;
   }
 
   .form__input {
