@@ -1,0 +1,17 @@
+.block {
+  margin: 14rem 2.4rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .block {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+}

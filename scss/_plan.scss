@@ -1,0 +1,78 @@
+/* Plan */
+.block__prices-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-gap: 6rem;
+}
+
+.card {
+  position: relative;
+  padding: 3rem;
+
+  border-radius: 8px;
+}
+
+.card__header {
+  margin-bottom: 5rem;
+}
+
+.card__header-title {
+  text-align: left;
+}
+
+.card__header-text {
+  color: inherit;
+  opacity: 0.5;
+}
+
+.card--free {
+  background: var(--color-primary);
+  color: var(--color-headings);
+}
+
+.card--paied {
+  background: var(--color-accent);
+  color: var(--color-back-ground);
+}
+
+.card__header-title--paid,
+.card__header-text--paid {
+  color: var(--color-back-ground);
+}
+
+.card__price {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  margin-right: 0.5rem;
+}
+
+.card__price-container {
+  display: flex;
+  align-items: center;
+}
+
+.card__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card__list-item {
+  color: var(--color-headings);
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 3rem;
+}
+
+.card__list-item--paid {
+  color: var(--color-back-ground);
+}
+
+@media screen and (min-width: 1040px) {
+  #card-paid {
+    transform: scale(1.05);
+  }
+  /* .card--paied {
+    transform: scale(1.05) !important;
+  } */
+}

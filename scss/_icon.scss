@@ -1,0 +1,44 @@
+/* Icons */
+.list__check-icon {
+  width: 12px;
+  height: 9px;
+  margin-right: 1.5rem;
+}
+
+.list__check-icon--free {
+  fill: var(--color-accent);
+}
+
+.hero__icon-mouse {
+  animation: hover 1.5s infinite ease-in-out;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card__icon {
+  position: absolute;
+}
+
+.card__icon--free {
+  width: 46px;
+  height: 46px;
+  top: -23px;
+}
+
+.card__icon--paid {
+  width: 51px;
+  height: 65px;
+  top: -34px;
+}

@@ -1,0 +1,19 @@
+@import "variables.scss";
+@import "typography.scss";
+@import "container";
+@import "features";
+@import "footer";
+@import "header";
+@import "hero";
+@import "icon";
+@import "plan";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: #080c20;
+  margin: 0;
+}

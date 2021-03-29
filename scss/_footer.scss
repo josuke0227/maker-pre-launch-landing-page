@@ -1,0 +1,154 @@
+/* Form */
+.block__form {
+  margin: 14rem 0 16rem;
+}
+
+.block__form-title-container {
+  background: url("/images/bg-footer-squiggle.svg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.block__form-title {
+  margin: 0 auto;
+  width: 15ch;
+}
+
+.footer__form {
+  margin: 0 4rem;
+}
+
+.form__input,
+.form__button {
+  border-radius: 24px;
+  border: none;
+  display: block;
+  width: 100%;
+}
+
+.form__button > span,
+::placeholder {
+  font-weight: 800;
+}
+
+.form__button {
+  margin-top: 2.4rem;
+  border: 2px solid var(--color-accent);
+  background: var(--color-accent);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.form__button:focus {
+  outline: none;
+}
+
+.form__button:hover {
+  background: var(--color-back-ground);
+}
+
+.form__button:hover span {
+  color: var(--color-headings);
+  opacity: 1;
+}
+
+.form__button > span {
+  color: var(--color-back-ground);
+  opacity: 0.7;
+}
+
+.form__input {
+  border: 2px solid var(--color-primary);
+  background: var(--color-primary);
+  box-sizing: border-box;
+  color: var(--color-headings);
+  padding: 1rem 1rem 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+.form__input--error {
+  border: 2px solid var(--color-errors);
+}
+
+::placeholder {
+  color: var(--color-headings);
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 2px solid var(--color-accent);
+}
+
+.footer__form__error-message {
+  text-align: center;
+  margin: 0.5rem;
+  color: var(--color-errors);
+}
+
+.message-collapse {
+  visibility: collapse;
+}
+
+@media screen and (min-width: 768px) {
+  .block__form-title {
+    width: auto;
+  }
+
+  .block__form-title-container {
+    background: none;
+  }
+
+  .block__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("/images/bg-footer-squiggle.svg") no-repeat center;
+    background-size: cover;
+    min-height: 15vh;
+  }
+
+  .block__form-title {
+    background: none;
+  }
+
+  .block__prices-container {
+    padding: 6rem;
+  }
+
+  .footer__form {
+    display: flex;
+    gap: 1.5rem;
+    min-width: 40rem;
+    margin: 3rem auto 0;
+  }
+
+  .footer__form__error-message {
+    padding-right: 6rem;
+  }
+
+  .form__input {
+    flex-grow: 1;
+  }
+
+  .form__button {
+    padding: 1rem 1.5rem;
+    margin-top: 0;
+    display: initial;
+    max-width: 13rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .block__form {
+    min-height: 25vh;
+  }
+
+  .block__prices-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4rem;
+    padding: 10rem;
+  }
+}
