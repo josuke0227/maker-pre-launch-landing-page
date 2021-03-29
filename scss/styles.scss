@@ -12,15 +12,15 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.container {
   font-family: "Manrope", sans-serif;
   background: #080c20;
   max-width: 1440px;
   margin: 0;
 }
 
-@media screen and (min-width: 1450px) {
-  body {
+@media screen and (min-width: 1450xp) {
+  .container {
     margin: 0 auto;
   }
 }
