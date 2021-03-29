@@ -1,7 +1,3 @@
-.block__features {
-  margin-top: 14rem;
-}
-
 .features__header-title {
   margin-bottom: 0;
 }
@@ -44,10 +40,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .block__features {
-    margin-top: 10rem;
-  }
-
   .feature__contariner {
     text-align: start;
     flex-direction: row;
@@ -64,11 +56,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .block__features {
-    display: flex;
-    gap: 3rem;
-  }
-
   .feature__contariner {
     flex-direction: column;
     align-items: flex-start;

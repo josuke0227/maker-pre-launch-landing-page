@@ -1,0 +1,55 @@
+// Block (common)
+.block {
+  margin: 14rem 2.4rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .block {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+}
+
+// Block hero
+.block__hero {
+  margin-top: 6.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block__hero {
+    margin-top: 7.7rem;
+    grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: 169px 1fr 169px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block__hero {
+    grid-gap: 15rem;
+    margin-top: 11.4rem;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .block__hero {
+    grid-gap: 6rem;
+    grid-template-columns: 353px 1fr 335px;
+  }
+}
+
+// Block features
+@media screen and (min-width: 1024px) {
+  .block__features {
+    display: flex;
+    gap: 3rem;
+  }
+}
